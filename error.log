@@ -1,0 +1,3 @@
+Failed to execute process '/teaOS/utils/termup/termup'. Reason:
+exec: Exec format error
+The file '/teaOS/utils/termup/termup' is marked as an executable but could not be run by the operating system.

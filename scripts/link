@@ -1,0 +1,3 @@
+#!/usr/bin/env fish
+ln /teaOS/utils/license/license /teaOS/bin/license
+ln /teaOS/utils/figlet/figlet /teaOS/bin/figlet

@@ -1,0 +1,13 @@
+ddw
+sys-info
+termup
+pget
+figlet
+license
+
+Libraries:
+
+Libraries in teaOS are basically shell scripts. Ex the libvol part has scripts that chance the volume up and down various percents.
+
+libvol
+libcolor

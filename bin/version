@@ -1,0 +1,9 @@
+#!/usr/bin/env fish
+# Outputs the teaOS version
+
+#   pretty name, name, version
+
+figlet teaOS   Beta
+echo "Pretty Name: teaOS"
+echo "Name:        teaOS Beta 1.0.0"
+echo "Version:     1.0.0-b"

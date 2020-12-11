@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "rget: a basic aur aid"
+echo "Enter the name of the package you want to download"
+read $pkg
+mkdir ~/.rget/ 2> /dev/null
+cd ~/.rget
+git clone https://aur.archlinux.org/$pkg
+cd $pkg
+makepkg -si

@@ -1,0 +1,3 @@
+#!/usr/bin/env fish
+figlet teaOS Beta
+/teaOS/utils/sys-info/sys-info

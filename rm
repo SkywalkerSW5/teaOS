@@ -1,0 +1,2 @@
+#!/usr/bin/env fish
+sudo rm -r /teaOS
