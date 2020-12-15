@@ -1,0 +1,3 @@
+#!/bin/sh
+sudo cp /teaOS/utils/tea-help/tea-help /tmp/tea.help.tmp
+vim -m /tmp/tea.help.tmp

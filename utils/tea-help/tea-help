@@ -1,0 +1,55 @@
+=========================================================
+                   Welcome to teaOS!
+                   
+   This guide will explain functions of a teaOS system.
+=========================================================
+
+
+=========================================================
+
+                         ddw
+
+Ddw is a ISO burning utlity using dd. Typing ddw into a 
+terminal will bring up a prompt asking for a ISO file. It
+will also list the ISOs in the current directory. After
+typing one in, it will bring you another prompt asking for 
+a device to burn it to. After you respond, it will start 
+burning the ISO.
+
+License: ddw is licensed under the BSD 2-Clause License
+
+This version of ddw is a rewrite from the original ddw, for
+better compatibility with fish. 
+
+Original repo link;
+https://github.com/SkywalkerSW5/ddw
+
+
+
+
+
+
+==========================================================
+
+                        sys-info
+
+sys-info is a Neofetch clone written in C. sys-info is a 
+fork of Paleofetch, and will be linked down below. Typing
+sys-info will bring up a summary of your system info. No
+arguments are in the program, however they will be added.
+
+
+
+License: sys-info remains under the MIT License Paleofetch
+is under.
+
+Paleofetch link;
+https://github.com/sam-barr/paleofetch
+
+
+
+
+
+
+
+==========================================================

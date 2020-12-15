@@ -1,0 +1,10 @@
+#!/bin/sh
+source /teaOS/sys/id
+
+if [[ $ID = "1.0.0-B" ]]; then
+        
+        wget https://raw.githubusercontent.com/
+        echo "Downloaded Update file"
+else
+        echo ""
+fi
