@@ -1,8 +1,29 @@
 #!/usr/bin/env fish
+# Welcome to the teaOS Installer script. The lines below install the code.
+# 
+#
+#
+#
+# Dev info:
+# 1.0.0-Beta Channel
+#
+#
+#
+
 clear
+echo "Preparing for the install..."
+sleep 4s
 tput setaf 1
 clear
-echo "Welcome to the teaOS Installer! Press enter to continue, press Ctrl-C to stop"
+echo "============================================================================="
+echo "                      Welcome to the teaOS Installer!"
+echo ""
+echo "              Press enter to continue, press Ctrl-C to stop"
+echo
+echo
+echo
+echo "teaOS, teaOS 1.0.0 Beta, 1.0.0-Beta "
+echo "============================================================================="
 read -n 1 -s -p ""
 echo "Starting the install"
 
@@ -35,7 +56,7 @@ echo "Done"
 echo "Copying programs and files..."
 cp -r ./utils/* /teaOS/utils
 cp -r ./bin/* /teaOS/bin
-cp -r ./sys/* /teaOS/sys
+#cp -r ./sys/* /teaOS/sys
 echo "Done"
 
 
@@ -61,3 +82,7 @@ cp ./scripts/os-release /etc/
 
 echo "Finished installing teaOS!"
 echo
+
+
+
+# EOF
