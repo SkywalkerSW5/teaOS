@@ -1,3 +1,0 @@
-#!/bin/sh
-sudo cp /teaOS/utils/tea-help/tea-help /tmp/tea.help.tmp
-less /tmp/tea.help.tmp

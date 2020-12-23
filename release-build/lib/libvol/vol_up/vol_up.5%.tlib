@@ -1,3 +1,0 @@
-#!/bin/sh
-#       A script that increases the volume by 5 %
-amixer set 'Master' 5%+
