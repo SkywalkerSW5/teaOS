@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Outputs the teaOS version
+
+#   pretty name, name, version
+
+/teaOS/utils/figlet/figlet -f /teaOS/utils/figlet/fonts/slant.flf teaOS
+echo "Pretty Name: teaOS"
+echo "Name:        teaOS Release 1.0.0"
+echo "Version:     1.0.0-Release"

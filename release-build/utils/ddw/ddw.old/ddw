@@ -1,0 +1,56 @@
+#!/usr/bin/env fish
+# removed /bin/bash for fish shell compatibility/ease of use
+echo "ddw 3.2"
+echo "Log is stored in ~/.ddw.log"
+usage() {
+	echo 
+	echo "Usage:"
+	echo
+	echo "ddw iso: Writes selected iso to selected drive;"
+	echo "ddw lsiso: Lists ISOs in dir;"
+
+}
+iso() {
+	clear
+	echo "Available ISOs in current directory:"
+	ls *.img *.iso *.qcow *.vhd *.bin 2> ~/.ddw.log
+	echo "Enter the filename of the ISO:" && read iso
+	clear
+	lsblk
+	echo "Enter the filename of the device:" && read device
+	
+	# This prevents the code from writing on /dev/sda or any of its paritions
+	
+
+            if [ "$device" = "/dev/sda" ]; then
+                echo "ddw will NOT write to /dev/sda"
+				exit
+            else
+                break  2> ~/.ddw.log    # break gives me w wierd message but still works so idk
+            fi
+
+	sudo dd if=$iso | pv | sudo dd of=$device 2> ~/.ddw.log
+}
+	lsiso() {
+			ls *.img *.iso *.qcow *.vhd *.bin 2> ~/.ddw.log
+}
+
+
+ if [ -z "$*" ]; then 
+	echo "Run ddw iso to get started"; fi
+
+for a in $@; do
+    case $a in
+        "") echo;;
+        "iso") iso;;
+	"mount") mount;;
+        "usage") usage;;
+        "help") usage;;
+	"update") update;;
+	"port") port;;
+	"lsiso") lsiso;;
+        *)
+
+            
+    esac
+done

@@ -1,4 +1,4 @@
-# teaOS Install Guide
+# teaOS
 teaOS is a collection of addons for Arch Linux. 
 
 ## Installing
@@ -19,7 +19,7 @@ The teaOS ISO is not a complete os - think of it as a zip file. You must obtain 
 
 Here is wget downloading the latest iso:
 
-```wget https://raw.githubusercontent.com/SkywalkerSW5/teaOS/builds/latest.iso```
+```wget https://github.com/SkywalkerSW5/teaOS/blobs/master/builds/0.1.0/release/teaOS-0.1.0.x86_64.iso```
 
 
 ### Mounting and running the installer

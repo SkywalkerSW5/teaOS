@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+echo "Compiling sys-info"
+cd /teaOS/utils/sys-info
+make
+echo "Done"
+
+
+
+
+echo "Compiling figlet"
+cd /teaOS/utils/figlet/
+make
+echo "Done"
