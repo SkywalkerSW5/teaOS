@@ -33,3 +33,30 @@ The traditional way to do this is to first mount it to /mnt:
 Next, run the installer.
 
 ```sudo ./installer.sh```
+
+## Programs
+
+teaOS includes a number of programs. Info about these programs can be found by running *tea-help*.
+
+Programs list:
+
+ddw
+
+figlet
+
+license
+
+rget
+
+ext
+
+rt
+
+sys-info
+
+tea-help
+
+tea-update
+
+
+
