@@ -19,7 +19,7 @@ The teaOS ISO is not a complete os - think of it as a zip file. You must obtain 
 
 Here is wget downloading the latest iso:
 
-```wget https://github.com/SkywalkerSW5/teaOS/blobs/master/builds/0.1.0/release/teaOS-0.1.0.x86_64.iso```
+```wget https://github.com/SkywalkerSW5/teaOS/blob/master/builds/0.1.0/release/teaOS-0.1.0.x86_64.iso```
 
 
 ### Mounting and running the installer
