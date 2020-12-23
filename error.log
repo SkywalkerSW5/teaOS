@@ -1,9 +1,3 @@
-fish: Unknown command: /teaOS/utils/termup/termup
-~/.config/fish/config.fish (line 13): 
-/teaOS/utils/termup/termup
-^
-from sourcing file ~/.config/fish/config.fish
-	called during startup
 sys-info.c: In function 'get_terminal':
 sys-info.c:361:9: warning: 'strncpy' specified bound 150 equals destination size [-Wstringop-truncation]
   361 |         strncpy(terminal, getenv("TERM"), BUF_SIZE); /* fallback to old method */

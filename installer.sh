@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/bin/sh
 # Welcome to the teaOS Installer script. The lines below install the code.
 # 
 #
@@ -12,7 +12,8 @@
 
 clear
 echo "Preparing for the install..."
-sleep 4s
+echo "Installing requirements..."
+./scripts/requirements.sh
 tput setaf 1
 clear
 echo "============================================================================="
