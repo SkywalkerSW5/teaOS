@@ -3,7 +3,7 @@
 
 #   pretty name, name, version
 
-figlet teaOS   Beta
+/teaOS/utils/figlet/figlet -f /teaOS/utils/figlet/fonts/slant.flf teaOS   Beta
 echo "Pretty Name: teaOS"
 echo "Name:        teaOS Beta 1.0.0"
 echo "Version:     1.0.0-b"
