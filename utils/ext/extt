@@ -1,9 +1,0 @@
-#!/bin/sh
-echo "ext: An extracter program for teaOS"
-if [[ $1 == "*.tar.gz" ]]; then
-        echo "Found Archive"
-        mkdir $1
-        tar xzf $1 -c ./$1
- else
-        echo "No archive"
- fi
