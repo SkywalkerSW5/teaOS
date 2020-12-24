@@ -59,4 +59,8 @@ tea-help
 tea-update
 
 
+## Versions
+
+0.1.0 -The first release of teaOS
+- 0.1.0-Revision 1: Fixed code that said 1.0.0 to 0.1.0
 
