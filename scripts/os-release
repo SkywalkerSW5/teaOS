@@ -1,5 +1,5 @@
-NAME="teaOS"
-PRETTY_NAME="teaOS"
+NAME="teaOS 0.1.0-Revision 1"
+PRETTY_NAME="teaOS Developer Edition"
 ID=arch
 BUILD_ID=rolling
 ANSI_COLOR="38;2;23;147;209"

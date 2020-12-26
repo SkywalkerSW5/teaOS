@@ -1,20 +1,10 @@
 #!/bin/sh
 # Welcome to the teaOS Installer script. The lines below install the code.
-# 
-#
-#
-#
-# Dev info:
-# 1.0.0-Beta Channel
-#
-#
-#
-
 clear
 echo "Preparing for the install..."
 echo "Installing requirements..."
 ./scripts/requirements.sh
-tput setaf 1
+tput setaf 6
 clear
 echo "============================================================================="
 echo "                      Welcome to the teaOS Installer!"
@@ -23,7 +13,6 @@ echo "              Press enter to continue, press Ctrl-C to stop"
 echo
 echo
 echo
-echo "teaOS, teaOS 1.0.0 Beta, 1.0.0-Beta "
 echo "============================================================================="
 read -n 1 -s -p ""
 echo "Starting the install"
@@ -50,7 +39,7 @@ cp ./scripts/version /teaOS/sys
 
 echo "Exporting executable directories..."
 touch ~/.config/fish/config.fish
-echo export PATH="/teaOS/bin:$PATH" >> ~/.config/fish/config.fish
+echo export PATH="/teaOS/bin:$PATH" >> ~/.bashrc
 echo "Done"
 
 

@@ -25,6 +25,12 @@ case $1 in
 		7z e $1 -o $1.dir
 		echo "Done"
 		;;
+	*.tar.bz2) 
+		echo "$1 is a tar.bz2 file"
+		mkdir $1.dir 
+		tar xjf $1 -C $1.dir
+		echo "Finished"
+;;
 	*)
 		echo "Archive not recognized"
 		;;
