@@ -34,6 +34,17 @@ Next, run the installer.
 
 ```sudo ./installer.sh```
 
+### Installing from source
+You can install teaOS from source, but it is really not recommended. It is very highly likely that you don't.
+
+To get started, first clone the repo
+
+```git clone https://github.com/SkywalkerSW5/teaOS --depth-1 && cd teaOS```
+
+After that, run the installer.
+
+```sudo ./installer.sh```
+
 ## Programs
 
 teaOS includes a number of programs. Info about these programs can be found by running *tea-help*.
@@ -50,15 +61,15 @@ rget
 
 ext
 
-rt
-
 sys-info
 
 tea-help
 
 tea-update
 
+mod
 
+sys-init
 ## Versions
 
 0.1.0 -The first release of teaOS

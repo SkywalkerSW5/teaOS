@@ -77,6 +77,23 @@ It will then download and install yay.
 License: rget is licensed under the BSD 2-Clause License
 
 
-=========================================================
+==========================================================
+            
+                       sys-init
 
- 
+sys-init allows scripts to be ran at boot. Say you want 
+script.sh to be ran at boot. To do this, you would run
+sys-init script.sh.
+
+License: sys-init is under the BSD 2-Clause License
+
+========================================================= 
+
+		         gip 
+
+Gip is a simple script that gets your IPV4 address,
+using nmcli. Just type gip, and it will output it.
+
+License: BSD 2-Clause
+
+========================================================              

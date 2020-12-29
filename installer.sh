@@ -27,6 +27,8 @@ echo "		/teaOS/sys"
 mkdir /teaOS/sys
 echo "		/teaOS/bin"
 mkdir /teaOS/bin
+echo "		/teaOS/modules"
+mkdir /teaOS/modules
 echo "		/teaOS/utils"
 mkdir /teaOS/utils
 echo "		/teaOS/sys/old"
@@ -55,6 +57,8 @@ echo "Linking programs..."
 ./scripts/link 2> error.log
 echo "Done"
 
+echo "Installing base modules..."
+./modules/base.mod
 
 
 echo "Running post-install script"

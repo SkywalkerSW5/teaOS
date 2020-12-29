@@ -11,3 +11,9 @@ echo "Compiling figlet"
 cd /teaOS/utils/figlet/
 make
 echo "Done"
+
+
+echo "Making sys-init a systemd service"
+cp /teaOS/utils/sys-init/sys-init.service /etc/systemd/system/sys-init.service
+chmod 644 /etc/systemd/system/sys-init.service
+systemctl enable sys-init.service
