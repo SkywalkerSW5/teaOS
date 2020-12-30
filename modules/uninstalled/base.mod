@@ -12,5 +12,7 @@ cp /teaOS/modules/uninstalled/mod /teaOS/bin
 echo "Creating directories..."
 mkdir /teaOS/modules/bin
 mkdir /teaOS/modules/mods
-mkdir /teaOS/modules/
+mkdir /teaOS/modules/view
+echo "Copying view file"
+cp /teaOS/modules/uninstalled/base /teaOS/modules/view
 echo "Finished installing Base Mod"

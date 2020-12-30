@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "========================================================="
+echo "			   				       "
+echo "              teaOS Uninstallation Script                "
+echo ""
+echo "                Press Enter to continue                  "
+echo
+echo "========================================================="
+read -n 1 -p ""
+
+rm -r /teaOS/*
+rm /etc/systemd/system/sys-init.service
+
+echo "Done"
