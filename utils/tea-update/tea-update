@@ -1,10 +1,33 @@
 #!/bin/sh
 source /teaOS/sys/id
 
-if [[ $ID = "1.0.0-B" ]]; then
-        
-        wget https://raw.githubusercontent.com/
-        echo "Downloaded Update file"
-else
-        echo ""
+if [ $ID = "020" ] 
+	then
+		echo "Retrieved teaOS ID"
+		sleep 2s
+		echo "teaOS Version: 0.2.0"
+		echo "teaOS Sys:     020"
+		echo
+		sleep 3s
+		echo "Making backup of current installation"
+		mkdir /tmp/teaOS
+		cp -r /teaOS/* /tmp/teaOS
+		cd /tmp/
+		zip -r teaOS-0.2.0.backup.zip ./teaOS		
+	#	rm -r /teaOS
+		mkdir /teaOS
+		mkdir /teaOS/backup
+		mkdir /teaOS/update
+		cp teaOS-0.2.0.backup.zip /teaOS/backup
+		echo "Downloading Update"
+		cd /teaOS/update
+		wget https://raw.githubusercontent.com/SkywalkerSW5/teaOS/master/update/020/
+		chmod +x ./tea-020-021.tea.update
+
+		echo "Downloading update file"
+		wget https://raw.githubusercontent.com/SkywalkerSW5/teaOS/master/update/020/020-update-021.zip
+		
+			
+else 
+	echo "teaOS Version not recognized"
 fi

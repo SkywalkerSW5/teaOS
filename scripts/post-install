@@ -1,4 +1,4 @@
-#!/usr/bin/env fish
+#!/bin/sh
 echo "Compiling sys-info"
 cd /teaOS/utils/sys-info
 make
@@ -10,6 +10,7 @@ echo "Done"
 echo "Compiling figlet"
 cd /teaOS/utils/figlet/
 make
+make install
 echo "Done"
 
 

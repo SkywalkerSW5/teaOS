@@ -10,4 +10,16 @@ case $1 in
 		
 		version
 ;;
+	id)
+		/teaOS/sys/id
+;;
+	usage)
+		echo "tea ARGS"
+		echo "		"
+		echo "		ver:  Shows teaOS Version"
+		echo "		help: Runs tea-help"
+		echo "		id:   Shows teaOS ID"
+		echo ""
+;;
+
 esac	

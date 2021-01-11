@@ -14,12 +14,13 @@ echo
 echo "============================================================================="
 read -n 1 -s -p ""
 echo "Starting the install"
-
+./scripts/license.sh
 
 
 echo
 echo "Creating directorys....."
-mkdir /teaOS
+mkdir /teaOS >> /dev/null
+mkdir /teaOS/backup >> /dev/null
 mkdir /teaOS/sys
 mkdir /teaOS/bin
 mkdir /teaOS/modules
@@ -32,7 +33,7 @@ echo
 cp ./scripts/version /teaOS/sys
 
 echo "Exporting executable directories..."
-echo export PATH="/teaOS/bin:/teaOS/modules/bin:$PATH" >> ~/.bashrc
+echo export PATH="/teaOS/bin:/teaOS/modules/bin:$PATH" >> ~/.zshrc
 echo "Done"
 
 
@@ -41,6 +42,7 @@ cp -r ./utils/* /teaOS/utils
 cp -r ./bin/* /teaOS/bin
 #cp -r ./sys/* /teaOS/sys
 cp -r ./modules/* /teaOS/modules
+cp -r ./sys/* /teaOS/sys
 echo "Done"
 
 echo "Running post-install scripts"

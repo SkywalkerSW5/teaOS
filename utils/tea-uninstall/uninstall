@@ -8,8 +8,9 @@ echo "                Press Enter to continue                  "
 echo
 echo "========================================================="
 read -n 1 -p ""
-
-rm -r /teaOS/*
-rm /etc/systemd/system/sys-init.service
-
-echo "Done"
+rm -r /teaOS/sys
+rm -r /teaOS/bin
+rm -r /teaOS/utils
+rm -r /teaOS/lib
+rm -r /teaOS/modules
+echo "Finished. There is still a backup of teaOS in case you want to reinstall it."

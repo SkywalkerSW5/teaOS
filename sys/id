@@ -1,1 +1,3 @@
-set ID ANDJF
+#!/bin/sh
+ID=020
+echo $ID
