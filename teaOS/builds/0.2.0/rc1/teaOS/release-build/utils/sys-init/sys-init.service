@@ -1,0 +1,9 @@
+[Unit]
+Description=teaOS sys-init script
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /teaOS/utils/sys-init/boot/*
+
+[Install]
+WantedBy=multi-user.target

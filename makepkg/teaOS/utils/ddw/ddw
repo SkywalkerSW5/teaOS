@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "ddw 4.0"
+clear
+echo "ISOs in directory"
+ls *img *.iso 2> /dev/null
+echo "Enter the name of ISO"
+read iso
+clear
+lsblk
+echo "Enter device name"
+read dev
+dd if=$iso | pv | dd of=$dev
+

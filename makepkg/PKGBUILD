@@ -1,0 +1,28 @@
+pkgname=teaOS
+pkgver=0.2.0
+pkgrel=1
+pkgdec="teaOS Pkg for the ISO"
+arch=("x86_64")
+license=('BSD')
+depends=("neofetch")
+source=("$pkgname-$pkgver.tar.xz")
+md5sums=('beab65c1bfd5ef76b208185a264e5f00')
+prepare() {
+	
+	mkdir $pkgname-$pkgver
+	tar xvf ./$pkgname-$pkgver.tar.xz -C ./$pkgname-$pkgver
+	
+}
+build() {
+	cd $pkgname-$pkgver/
+	
+}
+package() {
+	cd $pkgdir
+	mkdir -p "teaOS"
+	cp $srcdir/$pkgname-$pkgver.tar.xz $pkgdir/
+	tar xvf $pkgname-$pkgver.tar.xz
+
+	
+	
+}

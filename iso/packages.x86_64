@@ -103,3 +103,11 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+
+# custom teaOS packages
+
+rtl8821ce-dkms-git
+yay-bin
+networkmanager
+plymouth
+linux-headers

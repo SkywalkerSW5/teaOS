@@ -1,0 +1,15 @@
+#!/bin/sh
+case $1 in
+	
+	*.sysinit) 
+		
+		echo "Copying to boot folder..."
+		chmod +x $1
+		cp $1 /teaOS/utils/sys-init/boot
+		echo "Finished"
+;;
+	*)
+		
+		echo "File is not a sys-init file. The file must end in .sysinit"
+;;
+esac
