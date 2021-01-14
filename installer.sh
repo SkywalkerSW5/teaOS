@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Preparing for the install..."
-./scripts/requirements.sh
+pacman -Syu --needed `cat ./scripts/pkgs`
 
 clear
 echo "============================================================================="
