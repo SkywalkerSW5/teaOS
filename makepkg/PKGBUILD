@@ -4,8 +4,7 @@ pkgrel=1
 pkgdec="teaOS Pkg for the ISO"
 arch=("x86_64")
 license=('BSD')
-depends=("neofetch")
-source=("$pkgname-$pkgver.tar.xz")
+source=("https://github.com/SkywalkerSW5/teaOS/raw.master/pkgs/teaOS-builds/teaOS-0.2.0.tar.xz")
 md5sums=('beab65c1bfd5ef76b208185a264e5f00')
 prepare() {
 	
