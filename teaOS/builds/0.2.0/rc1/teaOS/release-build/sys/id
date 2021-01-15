@@ -1,3 +1,0 @@
-#!/bin/sh
-ID=020
-echo $ID

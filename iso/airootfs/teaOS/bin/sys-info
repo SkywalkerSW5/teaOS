@@ -1,3 +1,0 @@
-#!/bin/sh
-/teaOS/utils/figlet/figlet -f /teaOS/utils/figlet/fonts/slant.flf teaOS Beta
-/teaOS/utils/sys-info/sys-info

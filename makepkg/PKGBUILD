@@ -13,8 +13,25 @@ prepare() {
 	
 }
 build() {
+	
+	# This compiles and installs stuff
+
+	cd $pkgname-$pkgver/utils/dwm-6.2/
+	make && make install
+
+	cd $pkgname-$pkgver/utils/dwmblocks/
+	make && make install
+
+	cd $pkgname-$pkgver/utils/dmenu-5.0
+	make && make install
+
+	cd $pkgname-$pkgver/utils/st/
+	make && make install
+	
+
 	cd $pkgname-$pkgver/
 	
+
 }
 package() {
 	cd $pkgdir

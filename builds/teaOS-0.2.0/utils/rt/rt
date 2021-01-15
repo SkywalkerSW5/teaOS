@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "rt: A tool to retrieve info;"
+echo "Type --help for usage"
+if [[ $1 = "--help" ]]; then
+        
+        echo "rt time: Shows current time"
+        echo "rt disk: Shows current disk usage"
+        echo "rt mem:  Shows current memory usage"
+else
+        break
+fi
+
+if [[ $1 = "time" ]]

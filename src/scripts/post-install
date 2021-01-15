@@ -1,0 +1,20 @@
+#!/bin/sh
+echo "Compiling sys-info"
+cd /teaOS/utils/sys-info
+make
+echo "Done"
+
+
+
+
+echo "Compiling figlet"
+cd /teaOS/utils/figlet/
+make
+make install
+echo "Done"
+
+
+echo "Making sys-init a systemd service"
+cp /teaOS/utils/sys-init/sys-init.service /etc/systemd/system/sys-init.service
+chmod 644 /etc/systemd/system/sys-init.service
+systemctl enable sys-init.service

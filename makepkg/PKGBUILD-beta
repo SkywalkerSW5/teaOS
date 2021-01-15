@@ -1,0 +1,27 @@
+pkgname=teaOS=beta
+pkgver=0.2.0
+pkgrel=1
+pkgdec="teaOS Beta Pkg"
+arch=("x86_64")
+license=('BSD')
+source=("https://github.com/SkywalkerSW5/teaOS/raw/master/teaOS-builds/teaOS-0.2.0.tar.xz")
+md5sums=('beab65c1bfd5ef76b208185a264e5f00')
+prepare() {
+	
+	mkdir $pkgname-$pkgver
+	tar xvf ./$pkgname-$pkgver.tar.xz -C ./$pkgname-$pkgver
+	
+}
+build() {
+	cd $pkgname-$pkgver/
+	
+}
+package() {
+	cd $pkgdir
+	mkdir -p "teaOS"
+	cp $srcdir/$pkgname-$pkgver.tar.xz $pkgdir/
+	tar xvf $pkgname-$pkgver.tar.xz
+
+	
+	
+}

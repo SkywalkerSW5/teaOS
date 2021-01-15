@@ -1,0 +1,8 @@
+#!/bin/sh
+source /teaOS/sys/id
+echo "Starting backup of teaOS"
+sleep 3s
+mkdir /tmp/teaOS
+cp -r /teaOS/* /tmp/teaOS
+zip -r teaOS-$ID.zip /tmp/teaOS
+cp ./teaOS-$ID.zip /teaOS/backup

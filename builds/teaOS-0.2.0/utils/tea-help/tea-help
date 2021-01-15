@@ -1,0 +1,103 @@
+=========================================================
+                   Welcome to teaOS!
+                   
+   This guide will explain functions of a teaOS system.
+=========================================================
+
+
+=========================================================
+
+                         ddw
+
+Ddw is a ISO burning utlity using dd. Typing ddw into a 
+terminal will bring up a prompt asking for a ISO file. It
+will also list the ISOs in the current directory. After
+typing one in, it will bring you another prompt asking for 
+a device to burn it to. After you respond, it will start 
+burning the ISO.
+
+License: ddw is licensed under the BSD 2-Clause License
+
+This version of ddw is a rewrite from the original ddw, for
+better compatibility with fish. 
+
+Original repo link;
+https://github.com/SkywalkerSW5/ddw
+
+==========================================================
+
+                        sys-info
+
+sys-info is a Neofetch clone written in C. sys-info is a 
+fork of Paleofetch, and will be linked down below. Typing
+sys-info will bring up a summary of your system info. No
+arguments are in the program, however they will be added.
+
+License: sys-info remains under the MIT License Paleofetch
+is under.
+
+Paleofetch link;
+https://github.com/sam-barr/paleofetch
+
+==========================================================
+
+		        license
+
+License is a license viewer using cat. It outputs license
+text to the terminal. Typing license help will bring
+you a list of licenses to choose includeing BSD, MIT, GPL.
+
+
+License: License is under the BSD 2-Clause License
+
+==========================================================
+
+                         rget
+
+rget is a very basic AUR helper. Usage is rget, then the
+AUR package you want to download. For example, rget yay.
+It will then download and install yay.
+
+License: rget is licensed under the BSD 2-Clause License
+
+
+==========================================================
+            
+                       sys-init
+
+sys-init allows scripts to be ran at boot. Say you want 
+script.sh to be ran at boot. To do this, you would run
+sys-init script.sh.
+
+License: sys-init is under the BSD 2-Clause License
+
+========================================================= 
+
+		         gip 
+
+Gip is a simple script that gets your IPV4 address,
+using nmcli. Just type gip, and it will output it.
+
+License: BSD 2-Clause
+
+========================================================      
+
+                        termup
+
+Termup is a script that runs sys-info, and some other
+programs when you launch a tty/terminal. Add termup
+to your zshrc or bashrc file.
+
+License: BSD 2-Clause
+
+========================================================             
+
+                         ext
+
+Ext is a script that unarchives archives. To use, run 
+ext *archive*.
+It supports .zip, .tar.gz, .tar.xz, .tar.bz2, .7z.
+
+License: BSD 2-Clause
+
+========================================================

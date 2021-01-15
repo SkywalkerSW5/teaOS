@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo "Downloading teaOS Update Files"
-wget https://raw.githubusercontent.com/SkywalkerSW5/teaOS/master/

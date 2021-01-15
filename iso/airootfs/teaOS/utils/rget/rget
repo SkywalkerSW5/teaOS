@@ -1,7 +1,0 @@
-#!/bin/sh
-
-mkdir ~/.rget/ 2> /dev/null
-cd ~/.rget
-git clone https://aur.archlinux.org/$1
-cd $1
-makepkg -si

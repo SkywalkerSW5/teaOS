@@ -1,3 +1,0 @@
-#!/usr/bin/env fish
-sudo rm -r /teaOS
-sudo rm /etc/systemd/system/sys-init.service
