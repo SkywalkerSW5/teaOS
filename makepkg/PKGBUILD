@@ -5,13 +5,11 @@ pkgdec="tea-utils"
 arch=("x86_64")
 license=('BSD' 'MIT' 'GPL')
 source=("https://github.com/SkywalkerSW5/teaOS/raw/master/teaOS-builds/$pkgname-$pkgver.tar.xz")
-
-
+#source=("./$pkgname-$pkgver.tar.xz")
+md5sums=("01b87c38884da196aa3ca50a4afaa9d6")
 build()
 	 {
 
-	mv $pkgname-$pkgver.tar.xz $srcdir/
-	cd $srcdir
 	tar xvf $pkgname-$pkgver.tar.xz
 	rm $pkgname-$pkgver.tar.xz
 
