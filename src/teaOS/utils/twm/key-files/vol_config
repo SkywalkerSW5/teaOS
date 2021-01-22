@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# This handles which device you change the volume with.
+# By default, it should stay Master, however you can change it here
+audio_src="Master"

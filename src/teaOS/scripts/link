@@ -1,0 +1,4 @@
+#!/bin/sh
+ln /teaOS/utils/license/license /teaOS/bin/license
+ln /teaOS/utils/figlet/figlet /teaOS/bin/figlet
+ln /teaOS/utils/sys-init/sys-init /teaOS/bin/sys-init

@@ -1,44 +1,24 @@
-pkgname=teaOS
+pkgname=tea-utils
 pkgver=0.2.0
 pkgrel=1
-pkgdec="teaOS Pkg for the ISO"
+pkgdec="tea-utils"
 arch=("x86_64")
-license=('BSD')
-source=("https://github.com/SkywalkerSW5/teaOS/raw/master/teaOS-builds/teaOS-0.2.0.tar.xz")
-md5sums=('beab65c1bfd5ef76b208185a264e5f00')
-prepare() {
-	
-	mkdir $pkgname-$pkgver
-	tar xvf ./$pkgname-$pkgver.tar.xz -C ./$pkgname-$pkgver
-	
-}
-build() {
-	
-	# This compiles and installs stuff
+license=('BSD' 'MIT' 'GPL')
+source=("https://github.com/SkywalkerSW5/teaOS/raw/master/teaOS-builds/$pkgname-$pkgver.tar.xz")
 
-	cd $pkgname-$pkgver/utils/dwm-6.2/
-	make && make install
 
-	cd $pkgname-$pkgver/utils/dwmblocks/
-	make && make install
+build()
+	 {
 
-	cd $pkgname-$pkgver/utils/dmenu-5.0
-	make && make install
-
-	cd $pkgname-$pkgver/utils/st/
-	make && make install
-	
-
-	cd $pkgname-$pkgver/
-	
-
-}
-package() {
-	cd $pkgdir
-	mkdir -p "teaOS"
-	cp $srcdir/$pkgname-$pkgver.tar.xz $pkgdir/
+	mv $pkgname-$pkgver.tar.xz $srcdir/
+	cd $srcdir
 	tar xvf $pkgname-$pkgver.tar.xz
+	rm $pkgname-$pkgver.tar.xz
 
+         }
+package() 
+	 {
 	
-	
-}
+	 cp -r $srcdir/* $pkgdir
+	 cd $pkgdir
+         }

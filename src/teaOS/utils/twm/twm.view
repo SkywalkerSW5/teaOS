@@ -1,0 +1,51 @@
+--------------------------------------------------------------------------------
+		                    twm Mod          
+
+      The twm mod installs programs including dwm, dmenu, st, and key-files.
+
+
+
+					
+				      dwm: 
+
+               Dwm is a window manager created by the Suckless group.
+        This version is modified by teaOS, and has added a couple things.
+
+
+Autostart:  A patch added that runs ~/.dwm/autostart.sh on start
+Fullgaps:   A patch that adds gaps.
+Barpadding: A patch that adds padding to the top bar.
+
+
+                                     dmenu:
+
+                       A menu-system that runs commands. 
+                                
+
+
+
+                                       st:
+
+                  St is a terminal created by the Suckless group.
+          This version is a modified version of the fork made by Luke Smith.
+
+
+
+
+
+                                    key-files:
+
+             key-files are a set of scripts that are executed by keybinds.
+     Some of them include turning the brightness up, volume up, and the volume down.
+
+
+
+
+
+
+
+
+
+License: MIT
+Author:  teaOS
+Files: /teaOS/utils/twm

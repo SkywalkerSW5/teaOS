@@ -1,0 +1,2 @@
+#!/bin/sh
+nmcli -p device show | grep "IP4.ADDRESS"

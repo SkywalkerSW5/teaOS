@@ -1,0 +1,37 @@
+#!/bin/sh
+
+case $1 in
+		
+	*.zip) 
+		echo "$1 is a zip file"
+		mkdir $1.dir
+		unzip $1 -d $1.dir
+		echo "Finished"
+		;;
+	*tar.xz) 
+		echo "$1 is a tar.xz file"
+		mkdir $1.dir
+		tar xf $1 -C $1.dir
+		echo "Finished"
+		;;
+	*.tar.gz)
+		echo "$1 is a tar.gz file"
+		mkdir $1.dir
+		tar xzf $1 -C $1.dir
+		;;
+	*.7z)
+		echo "$1 is a 7z file"
+		mkdir $1.dir
+		7z e $1 -o $1.dir
+		echo "Done"
+		;;
+	*.tar.bz2) 
+		echo "$1 is a tar.bz2 file"
+		mkdir $1.dir 
+		tar xjf $1 -C $1.dir
+		echo "Finished"
+;;
+	*)
+		echo "Archive not recognized"
+		;;
+esac
