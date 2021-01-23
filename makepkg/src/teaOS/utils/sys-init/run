@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# sys-init run script
+
+/teaOS/utils/sys-init/boot/*

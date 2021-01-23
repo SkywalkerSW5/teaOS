@@ -111,4 +111,8 @@ yay-bin
 networkmanager
 plymouth
 linux-headers
-teaOS
+tea-utils
+xorg
+xorg-xinit
+fish
+librewolf-bin

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Here you set the display you want to adjust the brightness for
+# To find your display, run "sudo light -L"
+
+# ex
+display="sysfs/backlight/amdgpu_bl0"
