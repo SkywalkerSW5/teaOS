@@ -2,7 +2,7 @@
 # See LICENSE file for copyright and license details.
 
 include config.mk
-
+BIN=/teaOS/bin
 SRC = drw.c dmenu.c stest.c util.c
 OBJ = $(SRC:.c=.o)
 
@@ -41,12 +41,11 @@ dist: clean
 	rm -rf dmenu-$(VERSION)
 
 install: all
-	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	cp -f dmenu dmenu_path dmenu_run stest $(DESTDIR)$(PREFIX)/bin
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu_path
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/dmenu_run
-	chmod 755 $(DESTDIR)$(PREFIX)/bin/stest
+	cp -f dmenu dmenu_path dmenu_run stest $(BIN)
+	chmod 755 $(BIN)/dmenu
+	chmod 755 $(BIN)/dmenu_path
+	chmod 755 $(BIN)/dmenu_run
+	chmod 755 $(BIN)/stest
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	sed "s/VERSION/$(VERSION)/g" < dmenu.1 > $(DESTDIR)$(MANPREFIX)/man1/dmenu.1
 	sed "s/VERSION/$(VERSION)/g" < stest.1 > $(DESTDIR)$(MANPREFIX)/man1/stest.1
@@ -54,10 +53,10 @@ install: all
 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/stest.1
 
 uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/dmenu\
-		$(DESTDIR)$(PREFIX)/bin/dmenu_path\
-		$(DESTDIR)$(PREFIX)/bin/dmenu_run\
-		$(DESTDIR)$(PREFIX)/bin/stest\
+	rm -f $(DESTDIR)$(PREFIX)/teaOS/bin/dmenu\
+		$(DESTDIR)$(PREFIX)/teaOS/bin/dmenu_path\
+		$(DESTDIR)$(PREFIX)/teaOS/bin/dmenu_run\
+		$(DESTDIR)$(PREFIX)/teaOSbin/stest\
 		$(DESTDIR)$(MANPREFIX)/man1/dmenu.1\
 		$(DESTDIR)$(MANPREFIX)/man1/stest.1
 
