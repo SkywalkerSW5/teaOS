@@ -12,15 +12,15 @@ case $1 in
 		mkdir ./iso/work
 		mkdir ./iso/iso
 		echo "		Building the ISO..."
-		mkarchiso -v -o ./iso -w ./iso/work ./iso
+		./iso/archiso/archiso/mkarchiso -v -o ./iso/iso -w ./iso/work ./iso
 		echo "Finished"
 ;;
 
 	pkg)
 		echo "Building tar"
 		cd src/
-		tar cvf teaOS-$2.tar.xz *
-		mv teaOS-$2.tar.xz ../
+		tar cvf tea-utils-$2.tar.xz *
+		mv tea-utils-$2.tar.xz ../teaOS-builds/
 		echo "Finished"
 ;;
 	clean)
