@@ -13,7 +13,7 @@ case $1 in
 	id)
 		/teaOS/sys/id
 ;;
-	usage)
+	"")
 		echo "tea ARGS"
 		echo "		"
 		echo "		ver:  Shows teaOS Version"

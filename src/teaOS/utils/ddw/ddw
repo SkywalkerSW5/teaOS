@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "ddw 4.0"
-sleep 1s
+echo ""
 echo "ISOs in directory"
 ls *img *.iso 2> /dev/null
 echo "Enter the name of ISO"
