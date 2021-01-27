@@ -1,3 +1,0 @@
-#!/bin/sh
-source ./bright_config
-sudo light -s $display -A 12

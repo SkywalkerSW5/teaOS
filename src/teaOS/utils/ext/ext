@@ -31,7 +31,16 @@ case $1 in
 		tar xjf $1 -C $1.dir
 		echo "Finished"
 ;;
-	*)
-		echo "Archive not recognized"
+	*.xz)
+		echo "$1 is a xz file"
+		mkdir $1.dir
+		tar xjf $1 -C $1.dir
+		echo "Finished"
+	
+	"")
+		echo "ext: A script that extracts archives:"
+		echo ""
+		echo "ext script.tar.xz"
+		echo ""
 		;;
 esac

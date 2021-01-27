@@ -1,3 +1,0 @@
-#!/bin/sh
-source ./vol_config
-amixer -D pulse set $audio_src 10%+

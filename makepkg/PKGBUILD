@@ -12,6 +12,7 @@ build()
 	 {
 
 	cp $srcdir/teaOS/scripts/picom.conf ~/.config
+	cp $srcdir/teaOS/scripts/os-release /etc
 	tar xvf $pkgname-$pkgver.tar.xz
 	rm $pkgname-$pkgver.tar.xz
 

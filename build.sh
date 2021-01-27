@@ -25,6 +25,7 @@ case $1 in
 ;;
 	clean)
 		echo "Cleaning..."
+		mv ./iso/iso/*.iso ./
 		rm -r ./iso/work ./iso/iso
 		echo "Done"
 ;;

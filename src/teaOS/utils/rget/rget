@@ -1,5 +1,6 @@
 #!/bin/sh
 
+rm -r ~/.rget/ 2> /dev/null
 mkdir ~/.rget/ 2> /dev/null
 cd ~/.rget
 git clone https://aur.archlinux.org/$1
