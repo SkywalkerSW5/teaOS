@@ -10,3 +10,4 @@ The ISOs are located on SourceForge
 https://sourceforge.net/projects/teaos/
 
 ## Screenshot
+![screenshot](icons/screenshot.png)
