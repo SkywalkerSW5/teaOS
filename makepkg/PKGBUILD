@@ -4,15 +4,15 @@ pkgrel=1
 pkgdec="tea-utils"
 arch=("x86_64")
 license=('BSD' 'MIT' 'GPL')
-depends=('wget' 'libx11' 'pv' 'alsa-utils' 'pulseaudio' 'zip' 'unzip')/$pkg
+depends=('wget' 'libx11' 'pv' 'alsa-utils' 'pulseaudio' 'zip' 'unzip')
 source=("https://github.com/SkywalkerSW5/teaOS/raw/master/teaOS-builds/$pkgname-$pkgver.tar.xz")
 #source=("./$pkgname-$pkgver.tar.xz")
-md5sums=("01b87c38884da196aa3ca50a4afaa9d6")
+md5sums=('8a1df4658a6f3318da20c4b7d327573a')
 build()
 	 {
 
 	cp $srcdir/teaOS/scripts/picom.conf ~/.config
-	cp $srcdir/teaOS/scripts/os-release /etc
+	sudo cp $srcdir/teaOS/scripts/os-release /etc
 	tar xvf $pkgname-$pkgver.tar.xz
 	rm $pkgname-$pkgver.tar.xz
 
