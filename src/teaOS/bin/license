@@ -1,0 +1,23 @@
+#!/bin/sh
+
+case $1 in
+
+	bsd)
+		cat /teaOS/utils/license/licenses/bsd
+;;
+
+	mit)
+		cat /teaOS/utils/license/licenses/mit
+;;
+	gpl)
+		cat /teaOS/utils/license/licenses/gpl
+;;
+	"")
+		echo "license: A license viewer for teaOS"
+		echo ""
+		echo "Usage: license *license*"
+		echo
+		echo "Licenses: gpl, mit, bsd"
+;;
+
+esac

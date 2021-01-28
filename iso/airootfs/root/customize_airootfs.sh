@@ -24,3 +24,6 @@ make install
 cd ../st
 make
 make install
+cd ../dwmblocks
+make
+make install
