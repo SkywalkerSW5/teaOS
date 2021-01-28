@@ -18,12 +18,17 @@ cd dwm-6.2
 make
 make install
 cd ..
-cd dmenu-5.0
+cd /teaOS/utils/twm/dmenu-5.0
 make 
 make install
-cd ../st
+cd ..
+cd st
 make
 make install
-cd ../dwmblocks
+cd ..
+cd /teaOS/utils/twm/dwmblocks
+ls
+pwd
+ls ../
 make
 make install

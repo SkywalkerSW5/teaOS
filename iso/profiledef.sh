@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="teaOS"
-iso_version="0.2.0"
+iso_version="0.3.0"
 iso_label="$iso_name-$iso_version"
 iso_publisher="Arch Linux <https://www.archlinux.org>"
 iso_application="Arch Linux Live/Rescue CD"
