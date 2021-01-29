@@ -9,5 +9,9 @@ teaOS is a Linux distro based off of Arch. More features will come, however curr
 The ISOs are located on SourceForge
 https://sourceforge.net/projects/teaos/
 
+## Shortcuts
+
+https://github.com/SkywalkerSW5/teaOS/wiki/Keyboard-Shortcuts-for-TWM
+
 ## Screenshot
 ![screenshot](icons/screenshot.png)
